@@ -123,11 +123,11 @@ $agentTools = Join-Path $env:LOCALAPPDATA 'AgentTools'
 uv python install 3.12
 
 function Install-AgentPythonGroup {
-    param([string]$Name, [string[]]$Packages)
+    param([string]$Name, [string[]]$Packages, [string]$PythonVersion = '3.12')
     $environment = Join-Path $agentTools $Name
     $executable = Join-Path $environment 'Scripts/python.exe'
     if (!(Test-Path -LiteralPath $executable)) {
-        uv venv --seed --python 3.12 $environment
+        uv venv --seed --python $PythonVersion $environment
         if ($LASTEXITCODE -ne 0) { throw "Could not create $Name" }
     }
     uv pip install --python $executable @Packages
@@ -152,18 +152,18 @@ $env:Path = "$pythonBin;$env:Path"
 python -c 'import sys; print(sys.executable)'
 ```
 
-Use separate environments for the larger or independently versioned stacks. Call the interpreter by its full path when using one of these.
+Use separate environments for the larger or independently versioned stacks. CAMEL OASIS uses Python 3.11 for compatibility with its document-processing dependency. Call the interpreter by its full path when using one of these.
 
 ```powershell
 Install-AgentPythonGroup 'automl' @('autogluon.tabular', 'autogluon.timeseries')
 Install-AgentPythonGroup 'knowledge' @('graphrag', 'graphiti-core', 'acryl-datahub')
-Install-AgentPythonGroup 'simulation' @('camel-oasis')
+Install-AgentPythonGroup 'simulation-311' @('camel-oasis') '3.11'
 Install-AgentPythonGroup 'voice' @('torch', 'transformers>=5.5', 'accelerate', 'huggingface-hub', 'soundfile')
 Install-AgentPythonGroup 'voice-realtime' @('vibevoice[streamingtts] @ git+https://github.com/microsoft/VibeVoice.git@16fb2cb1217c9934a886e1948ffb06120caa2df5')
 
 & "$agentTools/automl/Scripts/python.exe" -c 'from autogluon.timeseries import TimeSeriesPredictor'
 & "$agentTools/knowledge/Scripts/python.exe" -c 'import graphrag, graphiti_core, datahub'
-& "$agentTools/simulation/Scripts/python.exe" -c 'import oasis'
+& "$agentTools/simulation-311/Scripts/python.exe" -c 'import oasis'
 & "$agentTools/voice/Scripts/python.exe" -c 'import torch, transformers, soundfile'
 & "$agentTools/voice-realtime/Scripts/python.exe" -c 'from vibevoice.modular.modeling_vibevoice_streaming_inference import VibeVoiceStreamingForConditionalGenerationInference'
 ```
