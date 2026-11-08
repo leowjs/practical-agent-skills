@@ -18,6 +18,9 @@ A field guide to agent skills and companion tools for coding, testing AI apps, w
 | **Superpowers** | Skill suite | Guide a larger feature from brainstorming and design through implementation and verification. | 314,011 | [GitHub](https://github.com/obra/superpowers) |
 | **wshobson Agents** | Skill collection | Pick a specialist workflow. Start with Prompt Engineering Patterns to draft or revise a system message for a web app agent. | 42,281 | [GitHub](https://github.com/wshobson/agents) |
 | **Vercel React Best Practices and Web Design Guidelines** | Agent skills | Review React and Next.js apps for slow loading, unnecessary re-renders, keyboard accessibility, and form usability. | 33,701 | [React Best Practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices) · [Web Design Guidelines](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines) |
+| **FastAPI official skill** | Agent skill | Build Python API endpoints with validated models, stream AI responses, and keep generated frontend clients aligned with OpenAPI. | 104,560 | [Skill](https://github.com/fastapi/fastapi/blob/master/fastapi/.agents/skills/fastapi/SKILL.md) · [Setup](https://fastapi.tiangolo.com/ai-development/) |
+| **Excalidraw Diagram** | Agent skill | Turn an architecture or process into an editable diagram, then render a preview to catch overlaps and spacing issues. | 5,216 | [GitHub](https://github.com/coleam00/excalidraw-diagram-skill) |
+| **Anthropic Doc Coauthoring** | Agent skill | Draft technical handovers and design documents in stages, then test whether a fresh reader can answer key questions from the draft. | 189,039 | [Skill](https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md) |
 | **Animation Production Skills** | Skill suite | Choose an animation style and build a visual explainer, short video, or interactive browser story. Maintained by the author of this guide. | 0 | [GitHub](https://github.com/leowjs/animation-production-skills) |
 
 ## Evaluation and skill security
@@ -35,6 +38,7 @@ A field guide to agent skills and companion tools for coding, testing AI apps, w
 | **Graphiti** | Agent memory framework | Keep track of facts and relationships that change over time. Try asking for a current value and then its earlier value. | 32,625 | [GitHub](https://github.com/getzep/graphiti) |
 | **Microsoft GraphRAG** | Document retrieval framework | Index a document collection for questions that need evidence or themes from several documents. | 36,589 | [GitHub](https://github.com/microsoft/graphrag) |
 | **NVIDIA Auto Ontology** | Semantic layer + skills | Define business measures and relationships, then verify the SQL and results an agent generates against known answers. | 9,695 | [GitHub](https://github.com/NVIDIA/auto-ontology) |
+| **Google BigQuery Optimization** | Agent skill | Review costly queries and compare partitioning, clustering, or materialized views for a BigQuery workload. | 23,582 | [Skill](https://github.com/google/skills/blob/main/skills/cloud/bigquery-optimization/SKILL.md) |
 
 ## Warehouse and supply chain visualization
 
