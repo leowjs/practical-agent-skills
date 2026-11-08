@@ -68,6 +68,17 @@ claude plugin marketplace add anthropics/knowledge-work-plugins
 claude plugin install finance@knowledge-work-plugins
 ```
 
+## Data science and AutoML
+
+| Project | Type | When it earns its place | Stars | Source |
+| --- | --- | --- | ---: | --- |
+| **Anthropic Data — explore-data** | Agent skill | Guide a first pass on a dataset, including column types, missing values, duplicates, distributions, and suspicious values. Included in Anthropic’s Data plugin for Claude Code. | 35,160 | [Official source](https://github.com/anthropics/knowledge-work-plugins/blob/main/data/skills/explore-data/SKILL.md) · [Data plugin and Claude Code installation](https://github.com/anthropics/knowledge-work-plugins/blob/main/data/README.md) |
+| **FG Data Profiling** | Library | Generate a repeatable data profiling report for a new extract. The old YData Profiling GitHub link redirects to this repository. | 13,755 | [Official source](https://github.com/Data-Centric-AI-Community/fg-data-profiling) |
+| **Microsoft FLAML** | Library | Search model and parameter options within a time budget. Use it to establish a Fabric notebook baseline and track trials with MLflow. | 4,417 | [Official source](https://github.com/microsoft/FLAML) · [Microsoft Fabric AutoML guide](https://learn.microsoft.com/en-us/fabric/data-science/automated-machine-learning-fabric) |
+| **AutoGluon** | Library | Train a second AutoML benchmark for tabular prediction or time-series forecasting. Compare results on the same validation split and metric as the baseline. | 10,819 | [Official source](https://github.com/autogluon/autogluon) |
+
+Profile the dataset first. Then define the prediction target, the baseline, and the validation split before using AutoML. For a forecast or a prediction made at a specific point in a workflow, test on a later period and use only inputs available when the prediction would be made.
+
 ## Multi-agent simulation
 
 | Project | Type | When it earns its place | Stars | Source |
