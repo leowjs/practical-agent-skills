@@ -2,6 +2,8 @@
 
 A field guide to agent skills and companion tools for coding, testing AI apps, working with knowledge graphs, and producing visual explainers. Each entry says when it is useful and what kind of project it is.
 
+[Set up the skills, plugins, Python libraries, and video tools on Windows](WINDOWS-SETUP.md).
+
 ## Where to start
 
 - **I want my coding agent to make smaller, verifiable changes.** Try Karpathy Guidelines for everyday work. Use Superpowers when a feature benefits from design and planning before implementation. [Karpathy Guidelines](https://github.com/multica-ai/andrej-karpathy-skills) · [Superpowers](https://github.com/obra/superpowers)
