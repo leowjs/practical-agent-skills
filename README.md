@@ -47,6 +47,7 @@ A field guide to agent skills and companion tools for coding, testing AI apps, w
 | **Google BigQuery Optimization** | Agent skill | Review costly queries and compare partitioning, clustering, or materialized views for a BigQuery workload. | 23,582 | [Skill](https://github.com/google/skills/blob/main/skills/cloud/bigquery-optimization/SKILL.md) |
 | **Docling** | Agent skill + document library | Extract text and tables from PDFs, scans, and Office files. Check the structure against the source before indexing documents for retrieval. | 70,277 | [Skill](https://github.com/docling-project/docling/blob/main/docling/.agents/skills/docling/SKILL.md) |
 | **OpenAI Jupyter Notebooks** | Agent skill | Build reproducible Python or SQL notebooks and verify conclusions against executed outputs. Part of the Codex Data Analytics plugin. | 7,812 | [Skill](https://github.com/openai/plugins/blob/main/plugins/data-analytics/skills/jupyter-notebooks/SKILL.md) |
+| **Developing with Streamlit** | Agent skill | Build interactive Python data apps with controls, charts, and filters. The skill ships with Streamlit. | 46,270 | [Skill](https://github.com/streamlit/streamlit/blob/develop/lib/streamlit/.agents/skills/developing-with-streamlit/SKILL.md) · [Setup](https://docs.streamlit.io/develop/api-reference/cli/skills) |
 
 ## Warehouse and supply chain visualization
 
