@@ -55,6 +55,19 @@ A field guide to agent skills and companion tools for coding, testing AI apps, w
 
 Use OpenUSD for the 3D scene and Fabric for operational records. Match them with stable zone or asset IDs. In Power BI, show zone utilization and exceptions with Deneb, and use Azure Maps for paths between sites. Treat cuOpt as an optional step when the question shifts from seeing shipment activity to planning new routes.
 
+## Finance and accounting
+
+| Project | Type | When it earns its place | Stars | Source |
+| --- | --- | --- | ---: | --- |
+| **Anthropic Knowledge Work Plugins — Finance & Accounting** | Claude Code and Cowork plugin | Reconcile inventory valuation with the general ledger, explain variances, or coordinate month-end close. The plugin includes the reconciliation skill. | 35,159 | [Finance plugin](https://github.com/anthropics/knowledge-work-plugins/blob/main/finance/README.md) · [Reconciliation skill](https://github.com/anthropics/knowledge-work-plugins/blob/main/finance/skills/reconciliation/SKILL.md) |
+
+For Claude Code, install the finance plugin from the Knowledge Work Plugins marketplace.
+
+```bash
+claude plugin marketplace add anthropics/knowledge-work-plugins
+claude plugin install finance@knowledge-work-plugins
+```
+
 ## Multi-agent simulation
 
 | Project | Type | When it earns its place | Stars | Source |
@@ -62,7 +75,7 @@ Use OpenUSD for the 3D scene and Fabric for operational records. Match them with
 | **MiroFish** | Simulation application | Explore how simulated stakeholders might respond to a change. Use the results as hypotheses to check with real users. | 84,634 | [GitHub](https://github.com/666ghj/MiroFish) |
 | **CAMEL OASIS** | Simulation framework | Write custom experiments for interactions among agents. Choose it when you want control over the simulation in code. | 5,403 | [GitHub](https://github.com/camel-ai/oasis) |
 
-GitHub star counts were checked on **8 November 2026**. They are a snapshot of popularity. Skill rows show the star count of the repository that contains the skill. The descriptions explain the trade-offs that matter for choosing a project.
+GitHub star counts were checked on **8 November 2026**. They are a snapshot of popularity. Skill and plugin rows show the star count of the repository that contains them. The descriptions explain the trade-offs that matter for choosing a project.
 
 ## How to evaluate a skill
 
