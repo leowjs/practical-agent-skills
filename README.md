@@ -79,6 +79,15 @@ claude plugin install finance@knowledge-work-plugins
 
 Profile the dataset first. Then define the prediction target, the baseline, and the validation split before using AutoML. For a forecast or a prediction made at a specific point in a workflow, test on a later period and use only inputs available when the prediction would be made.
 
+## Career and interview skills
+
+| Project | Type | When it earns its place | Stars | Source |
+| --- | --- | --- | ---: | --- |
+| **Reactive Resume — Career Plugin** | Plugin | Draft or tailor a CV, practise a mock interview, and prepare for offer negotiation. Includes a data résumé skill that distinguishes offline evaluation from production results. | 45,468 | [GitHub](https://github.com/reactive-resume/reactive-resume/tree/main/plugins/reactive-resume) |
+| **Interview Coach Skill** | Agent skill | Run role-specific drills and mock interviews with rubric feedback. Build a reusable story bank, debrief real interviews, and rehearse negotiation conversations. | 2,500 | [GitHub](https://github.com/noamseg/interview-coach-skill) |
+| **Offer Toolkit — Offer Compare** | Agent skill | Compare multiple written offers across compensation, growth, manager or team, and lifestyle. The default workflow generates an HTML report and saves a local offer record. | 564 | [GitHub](https://github.com/yanliudesign/offer-toolkit-skill/blob/main/offer-compare-skill/SKILL.md) |
+| **Rampstack — Team Onboarding Playbook** | Agent skill | Build a 30/60/90-day onboarding plan with access, stakeholders, milestones, and a first deliverable. Adapt the manager-facing checklist into a personal ramp-up plan. | 1,047 | [GitHub](https://github.com/rampstackco/claude-skills/blob/main/skills/team-onboarding-playbook/SKILL.md) |
+
 ## Multi-agent simulation
 
 | Project | Type | When it earns its place | Stars | Source |
