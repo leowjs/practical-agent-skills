@@ -83,6 +83,8 @@ Profile the dataset first. Then define the prediction target, the baseline, and 
 
 | Project | Type | When it earns its place | Stars | Source |
 | --- | --- | --- | ---: | --- |
+| **Career Ops** | Job search framework | Discover openings, assess role fit, and track applications and follow-ups. Includes workflows for interview preparation and reviewing written offers. | 81,004 | [GitHub](https://github.com/career-ops-hq/career-ops) |
+| **AI Job Search** | Job search framework | Evaluate a job description, tailor a CV and cover letter, and prepare for interviews. Use it to build an application packet for a specific role. | 70,354 | [GitHub](https://github.com/ai-job-search-dev/ai-job-search) |
 | **Reactive Resume — Career Plugin** | Plugin | Draft or tailor a CV, practise a mock interview, and prepare for offer negotiation. Includes a data résumé skill that distinguishes offline evaluation from production results. | 45,468 | [GitHub](https://github.com/reactive-resume/reactive-resume/tree/main/plugins/reactive-resume) |
 | **Interview Coach Skill** | Agent skill | Run role-specific drills and mock interviews with rubric feedback. Build a reusable story bank, debrief real interviews, and rehearse negotiation conversations. | 2,500 | [GitHub](https://github.com/noamseg/interview-coach-skill) |
 
