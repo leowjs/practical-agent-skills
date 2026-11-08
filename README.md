@@ -22,6 +22,8 @@ A field guide to agent skills and companion tools for coding, testing AI apps, w
 | **Excalidraw Diagram** | Agent skill | Turn an architecture or process into an editable diagram, then render a preview to catch overlaps and spacing issues. | 5,216 | [GitHub](https://github.com/coleam00/excalidraw-diagram-skill) |
 | **Anthropic Doc Coauthoring** | Agent skill | Draft technical handovers and design documents in stages, then test whether a fresh reader can answer key questions from the draft. | 189,039 | [Skill](https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md) |
 | **Animation Production Skills** | Skill suite | Choose an animation style and build a visual explainer, short video, or interactive browser story. Maintained by the author of this guide. | 0 | [GitHub](https://github.com/leowjs/animation-production-skills) |
+| **Remotion Agent Skills** | Skill collection | Produce rendered videos with reusable React scenes, route animations, and captions. | 6,567 | [GitHub](https://github.com/remotion-dev/skills) |
+| **Microsoft VibeVoice** | Speech models | Generate single-speaker English narration or draft timestamped captions from recorded speech. | 56,733 | [GitHub](https://github.com/microsoft/VibeVoice) |
 
 ## Evaluation and skill security
 
