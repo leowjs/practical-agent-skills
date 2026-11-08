@@ -8,6 +8,7 @@ A field guide to agent skills and companion tools for coding, testing AI apps, w
 - **I’m writing a system prompt for a web app agent.** Start with Prompt Engineering Patterns. Give it the agent’s purpose, tools, permissions, and expected output. Use Promptfoo to check whether later edits change behaviour. [Prompt Engineering Patterns](https://github.com/wshobson/agents/blob/main/plugins/llm-application-dev/skills/prompt-engineering-patterns/SKILL.md) · [Promptfoo](https://github.com/promptfoo/promptfoo)
 - **I need to understand an unfamiliar codebase.** Use Graphify to trace a real path, then check the important relationships against the source. [Graphify](https://github.com/Graphify-Labs/graphify)
 - **I need to explain a product or process visually.** Use Animation Production Skills to choose a format and style, then develop a storyboard or an animation. [Animation Production Skills](https://github.com/leowjs/animation-production-skills)
+- **I need to visualize warehouse operations.** Start with a report that flags busy staging zones and affected shipments. Add OpenUSD when the warehouse layout helps users locate an exception. [Warehouse and supply chain visualization](#warehouse-and-supply-chain-visualization)
 
 ## Coding and creative workflows
 
@@ -33,6 +34,21 @@ A field guide to agent skills and companion tools for coding, testing AI apps, w
 | **Graphiti** | Agent memory framework | Keep track of facts and relationships that change over time. Try asking for a current value and then its earlier value. | 32,625 | [GitHub](https://github.com/getzep/graphiti) |
 | **Microsoft GraphRAG** | Document retrieval framework | Index a document collection for questions that need evidence or themes from several documents. | 36,589 | [GitHub](https://github.com/microsoft/graphrag) |
 | **NVIDIA Auto Ontology** | Semantic layer + skills | Define business measures and relationships, then verify the SQL and results an agent generates against known answers. | 9,695 | [GitHub](https://github.com/NVIDIA/auto-ontology) |
+
+## Warehouse and supply chain visualization
+
+| Project | Type | When it earns its place | Stars | Source |
+| --- | --- | --- | ---: | --- |
+| **OpenUSD** | Library | Core 3D scene description for the warehouse layout. Use it to represent racks, aisles, staging zones, and loading bays, and assign stable asset identifiers that can be matched to operational data. | 7,623 | [Official source](https://github.com/PixarAnimationStudios/OpenUSD) |
+| **NVIDIA USD Authoring** | Agent skill | Official NVIDIA instructions for creating, converting, and validating OpenUSD scenes with the OpenUSD Exchange SDK. The star count is for the SDK repository. | 91 | [Official source](https://github.com/NVIDIA-Omniverse/usd-exchange/blob/main/.agents/skills/usd-authoring/SKILL.md) |
+| **Microsoft Fabric Digital Twin Builder** | Fabric platform feature | Model warehouse locations, assets, and processes and connect those relationships to operational data in Fabric. Microsoft labels the feature as preview. | — | [Official source](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/digital-twin-builder/overview) |
+| **Azure Maps Path Layer for Power BI** | Power BI visual feature | Display geographic paths between plants, distribution centres, and customers in Power BI. Use route IDs and ordered points to draw paths, with shipment measures for analysis. | — | [Official source](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-path-layer) |
+| **Deneb** | Power BI custom visual | Power BI custom visual for building report charts with Vega or Vega-Lite. Use it for warehouse zone utilization, staging exceptions, or other views that need a custom layout. | 316 | [Official source](https://github.com/deneb-viz/deneb) |
+| **Vega-Lite** | Library | Declarative chart language and compiler supported by Deneb. Use it to express chart encodings, layers, and interactions as reusable specifications. | 5,546 | [Official source](https://github.com/vega/vega-lite) |
+| **NVIDIA Agent Skills** | Skill collection | Official NVIDIA skill collection for workflows across NVIDIA tools. The cuopt-routing-api-python skill helps formulate and run a route-planning problem with the cuOpt Python API. | 3,891 | [Official source](https://github.com/NVIDIA/skills) |
+| **NVIDIA cuOpt** | Library | GPU-accelerated optimization engine for vehicle routing and numerical optimization. Consider it for planning with delivery windows and capacity constraints once the business rules are defined. | 1,103 | [Official source](https://github.com/NVIDIA/cuopt) |
+
+Use OpenUSD for the 3D scene and Fabric for operational records. Match them with stable zone or asset IDs. In Power BI, show zone utilization and exceptions with Deneb, and use Azure Maps for paths between sites. Treat cuOpt as an optional step when the question shifts from seeing shipment activity to planning new routes.
 
 ## Multi-agent simulation
 
